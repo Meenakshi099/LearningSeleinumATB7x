@@ -49,6 +49,11 @@ public class HomeWorkLink {
 
         WebElement button_submit = driver.findElement(By.xpath("//input[@value='Continue']"));
         button_submit.click();
+
+        WebElement message = driver.findElement(By.xpath("//div[text()=' Warning: E-Mail Address is already registered!']"));
+        Assert.assertEquals(message.getText(),"Warning: E-Mail Address is already registered!");
     }
 
 }
+//Pa$$w0rd!
+//admin123.admin@gmail.com
